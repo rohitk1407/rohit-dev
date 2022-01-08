@@ -646,10 +646,6 @@ nav a:hover:before{
     grid-template-columns: repeat(2, 1fr);
     transition: 0.2s all ease-in-out;
 }
-.form:hover
-{
-    transform: scale(1.05);
-}
 
 .contact-form {
     filter: drop-shadow(1px 0 0 rgba(118,85,225,.6));
@@ -940,10 +936,7 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-    .form:hover
-    {
-        transform: scale(1);
-    }
+    
     .container {
         padding: 1.5rem;
     }
