@@ -986,6 +986,10 @@ textarea.input {
     .btn {
         padding: 0.45rem 1.2rem;
     }
+    .form:hover
+    {
+        transform: scale(1);
+    }
 }
 
 
