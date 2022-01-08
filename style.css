@@ -940,7 +940,10 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-
+    .form:hover
+    {
+        transform: scale(1);
+    }
     .container {
         padding: 1.5rem;
     }
@@ -985,10 +988,6 @@ textarea.input {
 
     .btn {
         padding: 0.45rem 1.2rem;
-    }
-    .form:hover
-    {
-        transform: scale(1);
     }
 }
 
