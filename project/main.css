@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.search-bar
+{
+    font-size: 120%;
+}
+#search
+{
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+}
+.search-btn
+{
+    padding: .2rem;
+}
+
+
+/* ************ MY PROJECT SECTION ***************/
+#section-2{
+    background-image: linear-gradient(to left,#fff 80%, #BEF0FB 90%);
+    filter: drop-shadow( 0 1px 2px #372557);
+    display:grid;
+    place-items: center;
+    width:100%;
+    height: 50rem;
+    overflow: hidden;
+    row-gap: 3rem;
+    padding: 3rem 0;
+}
+.search-bar
+{
+    place-self: self-start;
+    width:100%;
+    text-align: center;
+}
+.project-grid
+{
+    width: 100% ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    place-items: center;
+}
+.project-cards
+{
+    background: white;
+    box-shadow: 0.1rem 0.1rem 0.6rem rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    width: 18rem;
+    height: 20rem;
+    display: grid;
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+    border: 0.1rem outset #4458dc;
+}
+.project-cards:hover
+{
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.2);
+    transform: scale(1.04);
+}
+
+.project-cards .card-img
+{
+    width:100%
+}
+.project-cards .card-label
+{
+    width:100%;
+    color:deepskyblue;
+    padding: 0 1rem;
+    font-size: 120%;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.card-label h1
+{
+    color: rgb(118,85,225);
+    margin-bottom: 1rem;
+    font-size: 120%;
+}
+.card-bottom
+{
+    width: 100%;
+    background-image: linear-gradient(to right,#7199F9 20% , #A371F9 ),radial-gradient(circle at top left,#7199F9,#A371F9 );
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    place-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height:3.3rem;
+    text-decoration: none;
+}
+.card-bottom span{
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-bottom:hover,.card-bottom:active{
+    background-image: linear-gradient(135deg, rgba(163, 0, 62, 0.562), rgba(172, 2, 187, 0.664));
+    text-shadow: 1px 1px 2px navy;
+    border-top: outset 0.12rem  #4458dc;
+}
+.card-bottom:hover span,.card-bottom:active span{
+    text-shadow: 1px 1px 2px navy;
+    margin-left: 1.5rem;
+    margin-top: -0.12rem;
+}
+
+/*My Project Section media Query*/
+@media (max-width: 1335px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 990px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 690px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-head h1{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+/*  -=------------MY PROJECT Section-------------*/
